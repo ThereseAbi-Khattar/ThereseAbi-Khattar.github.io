@@ -104,7 +104,7 @@ header h1 {
   color: var(--head);                                 /* Special header colour */
 }
 nav {
-  background: #333;             /* Dark grey background for nav bar */
+  background: #4dae8c ;             /* grey green background for nav bar */
   font-size: 0.95rem;             /* Slightly smaller font in navigation */
   width: 100%;                    /* Spans full width */
   margin: 32px auto;              /* Space above page content; no top gap */
@@ -214,11 +214,11 @@ tr:nth-child(even) {
 }
 .project-card {
   flex: 1 1 350px;                /* Responsive card width */
-  background-color: #f9f9f9;    /* Light grey background */
-  border: 1px solid #ddd;       /* Light border */
+  background-color: #fbdaf9;    /* Light pink background */
+  border: 1px solid #f895f2;       /* Darker pink border */
   padding: 15px;                  /* Space inside card */
   border-radius: 8px;             /* Rounded corners */
-  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);      /* Soft shadow */
+  box-shadow: 1px 2px 4px #ffb7fa;      /* Soft shadow */
 }
 .project-card img {
   width: 100%;          /* Image fills card width */
@@ -228,7 +228,7 @@ tr:nth-child(even) {
 .project-card h3 {
   margin-top: 10px;     /* Space above heading */
   font-size: 1.1rem;    /* Slightly larger heading text */
-  color: #2c3e50;     /* Dark grey-blue colour */
+  color: #f895f2;     /* Darker Pink */
 }
 
 /* ---------- 8) Cards / Gallery ------------- */
