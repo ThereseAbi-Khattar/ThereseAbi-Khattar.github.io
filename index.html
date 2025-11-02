@@ -142,7 +142,35 @@
 									</a>
 								</article>
 					</div>
+					<!--this is a teacher quote generator, use only 10 quotes because it should be enough-->
+						<div class="inner" id="countdown" style="text-align: center; font-size: x-large; color: rgb(255, 34, 144); margin-top: auto;" >
+						<p id="messageParagraph">Click the button to see a Quote!</p>
+						<button id="generateMessageButton">Generate Teaching Quote</button>
 
+						<script>
+							const messageParagraph = document.getElementById('messageParagraph');
+							const generateMessageButton = document.getElementById('generateMessageButton');
+
+							function updateMessage() {
+								const messages = [
+									"A good teacher doesn't just light a fire — they show others how to keep it burning.",
+									"Teaching is planting seeds for trees whose shade you may never sit under",
+									"The best teachers turn lessons into legacies.",
+									"To teach is to believe in potential before it's visible.",
+									"Every great mind was once guided by a patient one.",
+									"Great teachers don't just teach — they ignite curiosity that never fades",
+									"The classroom is where tomorrow begins, one lesson at a time",
+									"Teaching is the art of awakening joy in creative expression and knowledge.",
+									"Every student you believe in becomes a story that changes the world.",
+									"The influence of a teacher extends far beyond the final bell."
+								];
+								const randomIndex = Math.floor(Math.random() * messages.length);
+								messageParagraph.innerHTML = messages[randomIndex];
+							}
+
+							generateMessageButton.addEventListener('click', updateMessage);
+						</script>
+				<!--end of quote generator-->
 				<!-- Footer -->
 				</div>
 					<footer id="footer">

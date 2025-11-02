@@ -83,6 +83,12 @@
 							<p>Using calming music in the classroom helps create a focused and relaxed atmosphere,particularly during hands-on, project-based tasks with junior students. This simple strategy supports sensory regulation, enhances concentration, and helps reduce anxiety, contributing to a more inclusive and supportive learning environment.</p>
 						</section>
 					</div>
+					<!--countdown test-->
+					<section class="inner">
+						<h2> Countdown till my next major milestone</h2>
+						<p>Below is countdown for the days left till i graduate my University degree.</p>
+						<div id="countdown" style="text-align: center; font-size: x-large; color: rgb(255, 34, 144); margin-top: auto;">
+					</section>
 
 				<!--dont edit this-->
 				<!-- Footer -->
@@ -128,6 +134,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<!--start-->
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const targetDate = new Date("october, 30 2026 22:40:20").getTime();
+		const countdownEl = document.getElementById("countdown");
 
+		function updateCountdown() {
+			<!--here i will add the countdown till Graduation-->
+			const now = Date.now();
+			const distance = targetDate - now;
+
+				if (distance <= 0) {
+					countdownEl.textContent = "Congratulations on Your Graduation, wishing you all the very best!";
+					clearInterval(timer);
+				return;
+					}
+
+			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			countdownEl.textContent = `Graduation in ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+			}
+
+		const timer = setInterval(updateCountdown, 1000);
+		updateCountdown();
+	});
+	</script>
 	</body>
 </html>
